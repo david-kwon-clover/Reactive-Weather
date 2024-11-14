@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // Import data and WeatherCard here
 import cities from "./data";
 import WeatherCard from './components/WeatherCard';
+import Location from './components/Location';
 
 function App() {
     const [location, setLocation] = useState("New York City");
