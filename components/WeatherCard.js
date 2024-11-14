@@ -4,7 +4,7 @@ import rainy from "../assets/Rainy.svg";
 import partlyCloudy from "../assets/PartlyCloudy.svg";
 import cloudy from "../assets/Cloudy.svg";
 
-function WeatherCard({ city }) {
+function WeatherCard({ city, title }) {
   function camelCase(str) {
     // Using replace method with regEx
     return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
@@ -21,6 +21,7 @@ function WeatherCard({ city }) {
 
   return (
     <div className = "card">
+        <h2>{title}</h2>
         <div className = "img-container">
             <img className="card-img-top" src = {weatherIcons[camelCase(city.forecast)]} alt="Card image cap" id = "icon"/>
         </div>

@@ -1,5 +1,8 @@
 #root, html {
     background-color: #FFC107;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Card styles  */
