@@ -1,5 +1,8 @@
 #root, html {
     background-color: #FFC107;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Card styles  */
@@ -44,9 +47,27 @@
 }
 
 /* Form and input styling */
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .form {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.form input {
+    border-radius: 0.5rem;
+}
+
+.form-error-message {
+    font-size: x-large;
+    font-weight: bolder;
+    color: red;
 }
 
 button {
