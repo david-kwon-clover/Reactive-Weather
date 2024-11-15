@@ -3,6 +3,7 @@ import sunny from "../assets/Sunny.svg";
 import rainy from "../assets/Rainy.svg";
 import partlyCloudy from "../assets/PartlyCloudy.svg";
 import cloudy from "../assets/Cloudy.svg";
+import snowy from "../assets/Snowy.svg";
 
 function WeatherCard({ city, title }) {
   function camelCase(str) {
@@ -16,7 +17,8 @@ function WeatherCard({ city, title }) {
     "sunny": sunny,
     "rainy": rainy,
     "partlyCloudy": partlyCloudy,
-    "cloudy": cloudy
+    "cloudy": cloudy,
+    "snowy": snowy
   }
 
   return (
